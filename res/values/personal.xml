@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="text_bookstore_left">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="text_bookstore_right">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="text_normal">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="text_red_16">
+        <item name="android:textColor">#dddd0000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="text_red_14">
+        <item name="android:textColor">#dddd0000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="text_white_18">
+        <item name="android:textColor">#ddffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="text_white_14">
+        <item name="android:textColor">#ddffffff</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+     <style name="text_gray_14">
+        <item name="android:textColor">#99000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

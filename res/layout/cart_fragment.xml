@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+        android:id="@+id/rl_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shouye_bar_top"
+        >
+        <TextView 
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="购物车"
+			android:layout_centerInParent="true"
+			android:gravity="center"
+			style="@style/text_white_18"
+            />
+        <Button 
+            android:id="@+id/btn_header_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="编辑"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            style="@style/text_white_14"
+            />
+    </RelativeLayout>
+	<RelativeLayout 
+	    android:id="@+id/rl_middle_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@+id/rl_bottom_bar"
+	    android:layout_below="@+id/rl_header_bar"
+	    >
+        <TextView 
+            android:id="@+id/tv_middle_tip"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="当前购物车为空"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            />
+	    <ListView 
+	        android:id="@+id/lv_middle_cart_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="invisible"
+	        android:listSelector="#00000000"
+	        >
+	        
+	    </ListView>
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/rl_bottom_bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignParentBottom="true"
+	    >
+	    <TextView 
+	        android:id="@+id/tv_bottom_sum"
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:text="合计：¥0.0"
+	       	android:layout_marginLeft="15dp"
+	       	android:layout_centerVertical="true"
+	       	style="@style/text_red_16"
+	        />
+
+	    <Button
+	        android:id="@+id/btn_bottom_settle_account"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_alignParentRight="true"
+	        android:text="结算" 
+	        android:background="@drawable/cart_btn_submit"
+	        android:gravity="center"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="15dp"
+	        style="@style/text_white_18"/>
+
+	</RelativeLayout>
+</RelativeLayout>

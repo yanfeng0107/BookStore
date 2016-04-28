@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" 
+        android:background="@drawable/shouye_bar_top">
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="详情介绍" 
+            style="@style/text_white_18"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/rl_middle_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/rl_top_bar"
+        >
+
+        <ImageView
+            android:id="@+id/iv_details_pic"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_launcher" />
+
+        
+
+        <TextView
+            android:id="@+id/tv_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_details_pic"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_details_pic"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_details_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_details_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="TextView" />
+        
+        <TextView
+            android:id="@+id/tv_details_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:layout_below="@+id/tv_details_title"
+            android:layout_alignLeft="@+id/tv_details_title"
+            android:text="TextView" 
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_details_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_details_author"
+            android:layout_below="@+id/tv_details_author"
+            android:layout_marginTop="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_details_publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_details_category"
+            android:layout_below="@+id/tv_details_category"
+            android:layout_marginTop="10dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_details_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_details_publish_time"
+            android:layout_below="@+id/tv_details_publish_time"
+            android:layout_marginTop="10dp"
+            android:text="TextView" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/rl_bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_middle_content"
+        
+        >
+        <TextView 
+            android:id="@+id/tv_details_bottom_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="内容简介"
+            android:background="#10000000"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
+        <TextView 
+            android:id="@+id/tv_details_bottom_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="内容简介"
+            android:padding="10dp"
+            android:layout_below="@+id/tv_details_bottom_title"
+            />
+        <Button 
+            android:id="@+id/btn_add_to_cart"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/xiangqing_button"
+            android:text="添加购物车"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            style="@style/text_white_14"
+            />
+    </RelativeLayout>
+</RelativeLayout>

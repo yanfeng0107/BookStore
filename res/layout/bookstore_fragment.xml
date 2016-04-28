@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shouye_bar_top" >
+
+        <RelativeLayout
+            android:id="@+id/rl_header_input"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/tv_top_category"
+            android:background="@drawable/shouye_bg_input" >
+
+            <EditText
+                android:id="@+id/et_top_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toLeftOf="@+id/iv_header_searche"
+                android:background="@drawable/shouye_bg_input"
+                android:ems="20" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/iv_header_searche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/shouye_ico_search" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_header_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/shouye_arrow_down" />
+
+        <TextView
+            android:id="@+id/tv_top_category"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/iv_header_category"
+            android:gravity="center_vertical"
+            android:text="分类"
+            style="@style/text_white_18"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_header" >
+
+        <LinearLayout
+            android:id="@+id/ll_list_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_recommond_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_recommond_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="编辑推荐"
+                    style="@style/text_bookstore_left"/>
+
+                <TextView
+                    android:id="@+id/tv_recommonad_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_recommond_left"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_recommond_left"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="更多"
+                    style="@style/text_bookstore_right" />
+
+                <GridView
+                    android:id="@+id/gv_recommond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_recommond_left"
+                    android:numColumns="4" 
+                    android:listSelector="#00000000">
+                </GridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hot_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp" >
+
+                <TextView
+                    android:id="@+id/tv_hot_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="热销图书"
+                    style="@style/text_bookstore_left" />
+
+                <TextView
+                    android:id="@+id/tv_hot_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_hot_left"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_hot_left"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="更多"
+                    style="@style/text_bookstore_right"/>
+
+                <GridView
+                    android:id="@+id/gv_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_hot_left"
+                    android:numColumns="4" 
+                    android:listSelector="#00000000">
+                </GridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_new_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp" >
+
+                <TextView
+                    android:id="@+id/tv_new_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="热销图书"
+                    style="@style/text_bookstore_left" />
+
+                <TextView
+                    android:id="@+id/tv_new_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_new_left"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_new_left"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="更多"
+                   	style="@style/text_bookstore_right" />
+
+                <GridView
+                    android:id="@+id/gv_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_new_left"
+                    android:numColumns="4" 
+                    android:listSelector="#00000000">
+                </GridView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

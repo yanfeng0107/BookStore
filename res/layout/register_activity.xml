@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+        android:id="@+id/rl_register_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shouye_bar_top"
+        >
+        
+        <ImageView 
+            android:id="@+id/iv_register_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/login_ico_back"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            />
+        
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="注册" />
+    </RelativeLayout>
+    
+
+    <ScrollView
+        android:id="@+id/sv_register_middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_register_header" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/iv_login_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/login_photo_default" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/iv_login_back"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/login_input_wrap" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/login_ico_loginname" />
+
+                    <EditText
+                        android:id="@+id/et_register_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:background="@null"
+                        android:hint="请输入邮箱账号" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_login_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/relativeLayout1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_input_wrap" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/login_ico_pwd" />
+
+                    <EditText
+                        android:id="@+id/et_register_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:background="@null"
+                        android:hint="请输入密码" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_login_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/rl_login_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/login_input_wrap" >
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/login_ico_pwd" />
+
+                    <EditText
+                        android:id="@+id/et_register_real_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:background="@null"
+                        android:hint="真实姓名" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/rl_login_pwd"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toLeftOf="@+id/iv_register_code"
+                    android:background="@drawable/login_input_wrap" >
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/login_ico_pwd" />
+
+                    <EditText
+                        android:id="@+id/et_register_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/imageView5"
+                        android:background="@null"
+                        android:hint="请输入验证码" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_register_code"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/relativeLayout4"
+                    android:layout_alignRight="@+id/rl_login_pwd"
+                    android:layout_alignTop="@+id/relativeLayout4"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cart_btn_submit" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_register_register"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/login_btn_submit"
+                android:text="注册" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
